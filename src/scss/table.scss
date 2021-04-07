@@ -1,0 +1,12 @@
+.table {
+  margin-left: 10px;
+  &__cell {
+    border: 1px solid black;
+  }
+
+  &__header {
+    border: 1px solid black;
+    background-color: #fff;
+    background-color: #c5cae9;
+  }
+}

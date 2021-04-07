@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,103 @@
   <link rel="stylesheet" href="./css/materialize.min.css">
   <link rel="stylesheet" href="./css/styles.min.css">
 </head>
+
 <body>
+  <header class="header">
+    <nav>
+      <div class="nav-wrapper light-blue darken-3">
+        <span class="brand-logo left">Logo</span>
+        <ul id="nav-mobile" class="right">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="common">
+    <article class="common__picker picker">
+      <form class="picker__form" action="data" method="GET"> <!-- Форма запроса -->
+
+        <div class="row">
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder='' id="dateStart" type="date" class="validate" name="dataStart">
+              <label for="dateStart">Дата начала интервала</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder='' id="dateEnd" type="date" class="validate">
+              <label for="dateEnd">Дата конца интервала </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              Lorem ipsum dolor sit amet.
+            </div>
+          </div>
+
+          <div class="picker__radio">
+            <p>
+              <label>
+                <input name="type" type="radio" value="type1" checked />
+                <span>type1</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="type" type="radio" value="type2" />
+                <span>type2</span>
+              </label>
+            </p>
+          </div>
+          <button class="picker__button waves-effect waves-light btn-large light-blue darken-3" ype="submit">
+            Show
+          </button>
+      </form>
+    </article>
+    
+    <div class="common__table-wrapper">
+      <table class="common__table table highlight">
+        <thead>
+          <tr class="table__headers">
+            <!-- Заголовок таблицы -->
+            <th class="table__header">Дата</th>
+            <th class="table__header">Расход</th>
+            <th class="table__header">Давление</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="table__row">
+            <!-- Строка таблицы -->
+            <td class="table__cell table__cell--date" data-id="1:1">01.01.2031</td>
+            <td class="table__cell table__cell--v" data-id="1:2">Eclair</td>
+            <td class="table__cell table__cell--p" data-id="1:3">$0.87</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__cell--date" data-id="2:1">Alvin</td>
+            <td class="table__cell table__cell--v" data-id="2:2">Eclair</td>
+            <td class="table__cell table__cell--p" data-id="2:3">$0.87</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__cell--date" data-id="3:1">Alvin</td>
+            <td class="table__cell table__cell--v" data-id="3:2">Eclair</td>
+            <td class="table__cell table__cell--p" data-id="3:3">$0.87</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__cell--date" data-id="4:1">Alvin</td>
+            <td class="table__cell table__cell--v" data-id="4:2">Eclair</td>
+            <td class="table__cell table__cell--p" data-id="4:3">$0.87</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </main>
   <script src="./scripts/materialize.min.js"></script>
 </body>
+
 </html>

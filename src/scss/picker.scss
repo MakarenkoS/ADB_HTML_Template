@@ -1,0 +1,18 @@
+.picker {
+  background-color: #fafaff;
+  box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.5);
+  &__form {
+    padding: 20px;
+  }
+
+  &__radio {
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+  
+
+  &__button {
+    
+    width: 100%;
+  }
+}
